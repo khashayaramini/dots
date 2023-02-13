@@ -33,16 +33,13 @@ call plug#begin()
     " Plug 'preservim/tagbar'
     " Plug 'glepnir/dashboard-nvim'
     " Plug 'junegunn/fzf'
-    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-    Plug 'junegunn/fzf.vim'
-    Plug 'tpope/vim-commentary'
+    " Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+    " Plug 'junegunn/fzf.vim'
+    " Plug 'tpope/vim-commentary'
 
     " Completion / linters / formatters
 "    Plug 'neoclide/coc.nvim',  {'branch': 'master', 'do': 'yarn install'}
     Plug 'plasticboy/vim-markdown'
-
-    " elixir
-    Plug 'elixir-editors/vim-elixir'
 
     " Git
     " Plug 'airblade/vim-gitgutter'
@@ -50,8 +47,8 @@ call plug#begin()
     "
     " Plug 'neovim/nvim-lspconfig'
     " Plug 'kabouzeid/nvim-lspinstall'
-    " Plug 'rodrigore/coc-tailwind-intellisense', {'do': 'npm install'}
-    " Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    " " Plug 'rodrigore/coc-tailwind-intellisense', {'do': 'npm install'}
+    " " Plug 'neoclide/coc.nvim', {'branch': 'release'}
     " Plug 'williamboman/mason.nvim'
     " Plug 'williamboman/mason-lspconfig.nvim'
     call plug#end()
