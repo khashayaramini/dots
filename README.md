@@ -6,3 +6,4 @@ js-debug-adapter
 lua-language-server
 tailwindcss-language-server
 typescript-language-server
+html-lsp
