@@ -6,6 +6,8 @@ if vim.fn.empty(vim.fn.glob(install_path)) > 0 then
   vim.fn.system { 'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path }
   vim.cmd [[packadd packer.nvim]]
 end
+local vimrc = vim.fn.stdpath("config") .. "/vimrc.vim"
+vim.cmd.source(vimrc)
 
 require('packer').startup(function(use)
   -- Package manager
