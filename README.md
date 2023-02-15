@@ -7,3 +7,4 @@ lua-language-server
 tailwindcss-language-server
 typescript-language-server
 html-lsp
+elixir-ls
