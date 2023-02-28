@@ -1,4 +1,13 @@
-# dots
+#apps
+
+teletype
+neovim
+neofetch
+htop
+updog
+notion
+
+# nvim
 
 nvim mason:
 css-lsp
