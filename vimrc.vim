@@ -1,6 +1,7 @@
 set background=dark
 set clipboard=unnamedplus
 set completeopt=noinsert,menuone,noselect
+set clipboard=unnamedplus
 "set cursorline
 set hidden
 set inccommand=split
@@ -12,12 +13,19 @@ set title
 set ttimeoutlen=0
 set wildmenu
 
+" space instead of tab
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set expandtab
+
 nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
 
 nnoremap <C-p> :Files<CR>
+let g:OmniSharp_server_use_mono = 1
 
 "let NERDTreeShowHidden=1
 call plug#begin()
@@ -30,6 +38,7 @@ call plug#begin()
     Plug 'jiangmiao/auto-pairs'
     Plug 'ap/vim-css-color'
     Plug 'preservim/nerdtree'
+    Plug 'OmniSharp/omnisharp-vim'
     " Plug 'preservim/tagbar'
     " Plug 'glepnir/dashboard-nvim'
     " Plug 'junegunn/fzf'
