@@ -23,4 +23,5 @@ omnisharp-mono
 msbuild
 mono
 dotnet-sdk
-dotnet tool install --global csharp-ls 
+dotnet tool install --global csharp-ls
+:OmniSharpInstall in nvim
