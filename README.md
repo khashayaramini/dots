@@ -17,3 +17,10 @@ tailwindcss-language-server
 typescript-language-server
 html-lsp
 elixir-ls
+omnisharp-mono
+
+#unity
+msbuild
+mono
+dotnet-sdk
+dotnet tool install --global csharp-ls 
