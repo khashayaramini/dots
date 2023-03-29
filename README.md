@@ -6,6 +6,7 @@ neofetch
 htop  
 updog  
 notion  
+helix  
 
 # nvim
 
