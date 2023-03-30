@@ -8,6 +8,8 @@ updog
 notion  
 helix  
 slides  
+tree  
+
 
 # nvim
 
