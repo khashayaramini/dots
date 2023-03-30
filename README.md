@@ -9,6 +9,7 @@ notion
 helix  
 slides  
 tree  
+pandoc  
 
 
 # nvim
