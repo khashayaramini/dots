@@ -7,6 +7,7 @@ htop
 updog  
 notion  
 helix  
+slides  
 
 # nvim
 
