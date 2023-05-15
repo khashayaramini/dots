@@ -39,6 +39,7 @@ call plug#begin()
     Plug 'ap/vim-css-color'
     Plug 'preservim/nerdtree'
     Plug 'OmniSharp/omnisharp-vim'
+    Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
     " Plug 'preservim/tagbar'
     " Plug 'glepnir/dashboard-nvim'
     " Plug 'junegunn/fzf'
