@@ -10,6 +10,10 @@ helix
 slides  
 tree  
 pandoc  
+netcat  
+wireshark  
+burpsuite  
+nmap  
 
 
 # nvim
