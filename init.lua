@@ -71,6 +71,7 @@ require('packer').startup(function(use)
   if is_bootstrap then
     require('packer').sync()
   end
+    require("dapui").setup()
 end)
 
 -- When we are bootstrapping a configuration, it doesn't
@@ -333,7 +334,8 @@ local on_attach = function(_, bufnr)
   end, { desc = 'Format current buffer with LSP' })
 
   nmap('<F5>', function() require('dap').continue() end, 'Start Debug')
-  nmap('<leader>sb',function() require('dap').toggle_breakpoint() end, 'Toggle Breakpoint')
+  nmap('<leader>sb',function() require('dap').toggle_breakpoint() end, 'Set Breakpoint')
+  nmap('<leader>dt',function() require('dapui').toggle() end, 'Toggle Dap-ui')
   nmap('<F9>',function() require('dap').step_over() end, 'Step Over')
   nmap('<F10>',function() require('dap').step_into() end, 'Step Into')
 end
