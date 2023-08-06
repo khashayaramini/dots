@@ -24,44 +24,53 @@ nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
 
+nnoremap <silent> <F5> <Cmd>lua require'dap'.continue()<CR>
+nnoremap <silent> <F10> <Cmd>lua require'dap'.step_over()<CR>
+nnoremap <silent> <F11> <Cmd>lua require'dap'.step_into()<CR>
+nnoremap <silent> <F12> <Cmd>lua require'dap'.step_out()<CR>
+nnoremap <silent> <Leader>b <Cmd>lua require'dap'.toggle_breakpoint()<CR>
+
 nnoremap <C-p> :Files<CR>
 let g:OmniSharp_server_use_mono = 1
 
 "let NERDTreeShowHidden=1
 call plug#begin()
-    " Appearance
-    Plug 'vim-airline/vim-airline'
-    Plug 'ryanoasis/vim-devicons'
+" Appearance
+Plug 'vim-airline/vim-airline'
+Plug 'ryanoasis/vim-devicons'
 
-    " Utilities
-    Plug 'sheerun/vim-polyglot'
-    Plug 'jiangmiao/auto-pairs'
-    Plug 'ap/vim-css-color'
-    Plug 'preservim/nerdtree'
-    Plug 'OmniSharp/omnisharp-vim'
-    Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
-    " Plug 'preservim/tagbar'
-    " Plug 'glepnir/dashboard-nvim'
-    " Plug 'junegunn/fzf'
-    " Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-    " Plug 'junegunn/fzf.vim'
-    " Plug 'tpope/vim-commentary'
+" Utilities
+Plug 'sheerun/vim-polyglot'
+Plug 'jiangmiao/auto-pairs'
+Plug 'ap/vim-css-color'
+Plug 'preservim/nerdtree'
+Plug 'OmniSharp/omnisharp-vim'
+Plug 'folke/tokyonight.nvim'
+" Plug 'preservim/tagbar'
+" Plug 'glepnir/dashboard-nvim'
+" Plug 'junegunn/fzf'
+" Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+" Plug 'junegunn/fzf.vim'
+" Plug 'tpope/vim-commentary'
 
-    " Completion / linters / formatters
+" Completion / linters / formatters
 "    Plug 'neoclide/coc.nvim',  {'branch': 'master', 'do': 'yarn install'}
-    Plug 'plasticboy/vim-markdown'
+Plug 'plasticboy/vim-markdown'
 
-    " Git
-    " Plug 'airblade/vim-gitgutter'
-    "code
-    "
-    " Plug 'neovim/nvim-lspconfig'
-    " Plug 'kabouzeid/nvim-lspinstall'
-    " " Plug 'rodrigore/coc-tailwind-intellisense', {'do': 'npm install'}
-    " " Plug 'neoclide/coc.nvim', {'branch': 'release'}
-    " Plug 'williamboman/mason.nvim'
-    " Plug 'williamboman/mason-lspconfig.nvim'
-    call plug#end()
+" Git
+" Plug 'airblade/vim-gitgutter'
+"code
+"
+" Plug 'neovim/nvim-lspconfig'
+" Plug 'kabouzeid/nvim-lspinstall'
+" " Plug 'rodrigore/coc-tailwind-intellisense', {'do': 'npm install'}
+" " Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Plug 'williamboman/mason.nvim'
+" Plug 'williamboman/mason-lspconfig.nvim'
+" Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
+Plug 'mfussenegger/nvim-dap'
+Plug 'rcarriga/nvim-dap-ui'
+call plug#end()
 
 " lua << EOF
 " require'lspinstall'.setup()
