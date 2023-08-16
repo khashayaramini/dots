@@ -333,7 +333,7 @@ local on_attach = function(_, bufnr)
     vim.lsp.buf.format()
   end, { desc = 'Format current buffer with LSP' })
 
-  nmap('<F5>', function() require('dap').continue() end, 'Start Debug')
+  -- nmap('<F5>', function() require('dap').continue() end, 'Start Debug')
   nmap('<leader>sb',function() require('dap').toggle_breakpoint() end, 'Set Breakpoint')
   nmap('<leader>dt',function() require('dapui').toggle() end, 'Toggle Dap-ui')
   nmap('<F9>',function() require('dap').step_over() end, 'Step Over')

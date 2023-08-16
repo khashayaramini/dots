@@ -1,7 +1,6 @@
 set background=dark
 set clipboard=unnamedplus
 set completeopt=noinsert,menuone,noselect
-set clipboard=unnamedplus
 "set cursorline
 set hidden
 set inccommand=split
@@ -23,8 +22,8 @@ nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
-
-nnoremap <silent> <F5> <Cmd>lua require'dap'.continue()<CR>
+nnoremap <F5> :wa <bar> :set makeprg=cd\ build\ &&\ cmake\ ../.\ -DCMAKE_BUILD_TYPE=debug\ -DCMAKE_EXPORT_COMPILE_COMMANDS=1\ &&\ cmake\ --build\ . <bar> :compiler gcc <bar> :make <bar> :! cd build && ./out <CR>
+" nnoremap <silent> <F5> <Cmd>lua require'dap'.continue()<CR>
 nnoremap <silent> <F10> <Cmd>lua require'dap'.step_over()<CR>
 nnoremap <silent> <F11> <Cmd>lua require'dap'.step_into()<CR>
 nnoremap <silent> <F12> <Cmd>lua require'dap'.step_out()<CR>
