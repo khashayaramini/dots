@@ -15,7 +15,8 @@
 - burpsuite  
 - nmap  
 - glow
-- fd  
+- fd
+- wps-office  
 
 # unity  
 - msbuild  
