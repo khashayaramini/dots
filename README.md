@@ -14,7 +14,8 @@
 - wireshark  
 - burpsuite  
 - nmap  
-- glow  
+- glow
+- fd  
 
 # unity  
 - msbuild  
