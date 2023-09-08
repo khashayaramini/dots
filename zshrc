@@ -248,6 +248,7 @@ alias n='nvim'
 alias c='clear'
 alias e='exit'
 alias f='fd'
+alias r='ranger'
 
 # enable auto-suggestions based on the history
 if [ -f /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh ]; then

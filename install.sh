@@ -1,7 +1,7 @@
 #! /bin/bash
 
 echo "installing packages from"
-sudo pacman -S neovim firefox neofetch fd htop glow netcat zsh
+sudo pacman -S neovim firefox neofetch fd htop glow netcat zsh ranger
 
 
 echo "installing yay"

@@ -17,6 +17,7 @@
 - glow
 - fd
 - wps-office  
+- ranger  
 
 # unity  
 - msbuild  
