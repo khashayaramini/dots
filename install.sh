@@ -1,7 +1,7 @@
 #! /bin/bash
 
 echo "installing packages from"
-sudo pacman -S neovim firefox neofetch fd htop glow netcat zsh ranger
+sudo pacman -S neovim firefox neofetch fd htop glow netcat zsh ranger rofi hyperland waybar
 
 
 echo "installing yay"
@@ -10,6 +10,8 @@ git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
 echo "installing from yay"
 yay -S python-updog
 yay -S pfetch
+yay -S dunst swaybg swaylock-fancy-git swayidle pamixer light brillo
+yay -S ttf-font-awesome
 
 echo "installing vim plug"
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
