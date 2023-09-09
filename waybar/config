@@ -1,7 +1,8 @@
 {
-    "height": 40, // Waybar height (to be removed for auto height)
+    "height": 20, // Waybar height (to be removed for auto height)
     "layer": "top", // Waybar at top layer
-    "modules-left": ["custom/launcher", "cpu", "memory", "wlr/workspaces", "custom/weather"],
+    // "modules-left": ["custom/launcher", "cpu", "memory", "wlr/workspaces", "custom/weather"],
+    "modules-left": ["custom/launcher", "cpu", "memory"],
     "modules-right": ["tray", "network", "pulseaudio",  "backlight", "battery", "custom/lock", "clock", "custom/power-menu"],
     "wlr/workspaces": {
       "format": "{icon}",
@@ -62,8 +63,8 @@
     },
 
     "battery": {
-      "bat": "BAT0",
-      "adapter": "ADP0",
+      "bat": "BAT1",
+      "adapter": "ADP1",
       "interval": 60,
       "states": {
           "warning": 30,
