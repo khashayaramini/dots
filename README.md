@@ -14,10 +14,13 @@
 - wireshark  
 - burpsuite  
 - nmap  
-- glow
-- fd
+- glow  
+- fd  
 - wps-office  
 - ranger  
+- kdenlive  
+- ardour  
+- appimage-launcher  
 
 # unity  
 - msbuild  
@@ -25,4 +28,4 @@
 - dotnet-sdk  
 - dotnet tool install --global csharp-ls  
 - :OmniSharpInstall in nvim  
-- :LspStart omnisharp_mono everytime
+- :LspStart omnisharp_mono everytime  
