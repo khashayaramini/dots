@@ -1,7 +1,7 @@
 #! /bin/bash
 
 echo "installing packages from"
-sudo pacman -S neovim firefox neofetch fd htop glow netcat zsh ranger xfce4-screenshooter xfce4-terminal bluez-utils pavucontrol
+sudo pacman -S neovim firefox neofetch fd htop glow netcat zsh ranger xfce4-screenshooter xfce4-terminal bluez-utils pavucontrol alsa-plugins audacity
 
 
 echo "installing yay"
