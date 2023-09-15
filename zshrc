@@ -11,6 +11,8 @@ setopt numericglobsort     # sort filenames numerically when it makes sense
 setopt promptsubst         # enable command substitution in prompt
 
 WORDCHARS=${WORDCHARS//\/} # Don't consider certain characters part of the word
+export EDITOR='nvim'
+export VISUAL='nvim'
 
 # hide EOL sign ('%')
 PROMPT_EOL_MARK=""
@@ -264,4 +266,9 @@ fi
 
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 export PATH="$HOME/.local/bin:$PATH"
+export PATH="/opt/flutter/bin:$PATH"
+export PATH="/home/raven/.dotnet:$PATH"
+export DOTNET_ROOT=$HOME/.dotnet
+export PATH="/home/raven/.config/composer/vendor/bin:$PATH"
+export PATH="/opt/cuda/bin:$PATH"
 pfetch
