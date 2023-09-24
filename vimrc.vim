@@ -70,6 +70,7 @@ Plug 'plasticboy/vim-markdown'
 Plug 'mfussenegger/nvim-dap'
 Plug 'rcarriga/nvim-dap-ui'
 Plug 'theHamsta/nvim-dap-virtual-text'
+Plug 'ggandor/leap.nvim'
 call plug#end()
 
 " lua << EOF

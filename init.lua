@@ -471,3 +471,5 @@ dap.configurations.rust = dap.configurations.cpp
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=4 sts=4 sw=2
+--
+require('leap').add_default_mappings()
