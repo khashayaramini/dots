@@ -473,3 +473,5 @@ dap.configurations.rust = dap.configurations.cpp
 -- vim: ts=4 sts=4 sw=2
 --
 require('leap').add_default_mappings()
+vim.cmd [[set shiftwidth=8]]
+vim.cmd [[set tabstop=8]]

@@ -13,10 +13,10 @@ set ttimeoutlen=0
 set wildmenu
 
 " space instead of tab
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
-set expandtab
+" set tabstop=8
+" set softtabstop=8
+" set shiftwidth=8
+" set expandtab
 
 nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
