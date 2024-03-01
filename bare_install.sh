@@ -1,11 +1,11 @@
 #! /bin/bash
 
-echo "installing packages from pacman"
-sudo pacman -S neovim firefox neofetch fd htop glow netcat zsh ranger bluez-utils tor steam onionshare kleopatra keepassxc qbittorrent vlc gimp
+echo "installing packages from"
+sudo pacman -S neovim firefox neofetch fd htop glow netcat zsh ranger xfce4-screenshooter xfce4-terminal bluez-utils pavucontrol alsa-plugins audacity vulkan-intel
 
-echo "staring tor"
-sudo systemctl enable tor
-sudo systemctl start tor
+
+echo "installing yay"
+git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
 
 echo "installing from yay"
 yay -S python-updog
