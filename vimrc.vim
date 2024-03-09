@@ -22,15 +22,15 @@ nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
-nnoremap <F5> :wa <bar> :set makeprg=cd\ build\ &&\ cmake\ ../.\ -DCMAKE_BUILD_TYPE=debug\ -DCMAKE_EXPORT_COMPILE_COMMANDS=1\ &&\ cmake\ --build\ . <bar> :compiler gcc <bar> :make <bar> :! cd build && ./out <CR>
+" nnoremap <F5> :wa <bar> :set makeprg=cd\ build\ &&\ cmake\ ../.\ -DCMAKE_BUILD_TYPE=debug\ -DCMAKE_EXPORT_COMPILE_COMMANDS=1\ &&\ cmake\ --build\ . <bar> :compiler gcc <bar> :make <bar> :! cd build && ./out <CR>
 " nnoremap <silent> <F5> <Cmd>lua require'dap'.continue()<CR>
-nnoremap <silent> <F10> <Cmd>lua require'dap'.step_over()<CR>
-nnoremap <silent> <F11> <Cmd>lua require'dap'.step_into()<CR>
-nnoremap <silent> <F12> <Cmd>lua require'dap'.step_out()<CR>
-nnoremap <silent> <Leader>b <Cmd>lua require'dap'.toggle_breakpoint()<CR>
+" nnoremap <silent> <F10> <Cmd>lua require'dap'.step_over()<CR>
+" nnoremap <silent> <F11> <Cmd>lua require'dap'.step_into()<CR>
+" nnoremap <silent> <F12> <Cmd>lua require'dap'.step_out()<CR>
+" nnoremap <silent> <Leader>b <Cmd>lua require'dap'.toggle_breakpoint()<CR>
 
-nnoremap <C-p> :Files<CR>
-let g:OmniSharp_server_use_mono = 1
+" nnoremap <C-p> :Files<CR>
+" let g:OmniSharp_server_use_mono = 1
 
 "let NERDTreeShowHidden=1
 call plug#begin()
