@@ -15,6 +15,8 @@ set wildmenu
 unmap f
 unmap t
 
+xnoremap <leader>p "_dP
+
 " space instead of tab
 " set tabstop=8
 " set softtabstop=8
