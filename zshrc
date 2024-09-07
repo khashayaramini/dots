@@ -259,7 +259,7 @@ if [ -f /etc/zsh_command_not_found ]; then
 fi
 
 eval `ssh-agent -s`
-alias 'ssh_raven_git'='ssh-add .ssh/raven_git'
+alias 'ssh_raven_git'='ssh-add ~/.ssh/raven_git'
 
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 export PATH="$HOME/.local/bin:$PATH"
