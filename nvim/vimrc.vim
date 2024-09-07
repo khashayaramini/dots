@@ -4,7 +4,6 @@ set completeopt=noinsert,menuone,noselect
 "set cursorline
 set hidden
 set inccommand=split
-set nofoldenable
 " set mouse=a
 set number
 set relativenumber
@@ -13,25 +12,28 @@ set title
 set ttimeoutlen=0
 set wildmenu
 
+unmap f
+unmap t
+
 " space instead of tab
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
-set expandtab
+" set tabstop=8
+" set softtabstop=8
+" set shiftwidth=8
+" set expandtab
 
 nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
-nnoremap <F5> :wa <bar> :set makeprg=cd\ build\ &&\ cmake\ ../.\ -DCMAKE_BUILD_TYPE=debug\ -DCMAKE_EXPORT_COMPILE_COMMANDS=1\ &&\ cmake\ --build\ . <bar> :compiler gcc <bar> :make <bar> :! cd build && ./out <CR>
+" nnoremap <F5> :wa <bar> :set makeprg=cd\ build\ &&\ cmake\ ../.\ -DCMAKE_BUILD_TYPE=debug\ -DCMAKE_EXPORT_COMPILE_COMMANDS=1\ &&\ cmake\ --build\ . <bar> :compiler gcc <bar> :make <bar> :! cd build && ./out <CR>
 " nnoremap <silent> <F5> <Cmd>lua require'dap'.continue()<CR>
-nnoremap <silent> <F10> <Cmd>lua require'dap'.step_over()<CR>
-nnoremap <silent> <F11> <Cmd>lua require'dap'.step_into()<CR>
-nnoremap <silent> <F12> <Cmd>lua require'dap'.step_out()<CR>
-nnoremap <silent> <Leader>b <Cmd>lua require'dap'.toggle_breakpoint()<CR>
+" nnoremap <silent> <F10> <Cmd>lua require'dap'.step_over()<CR>
+" nnoremap <silent> <F11> <Cmd>lua require'dap'.step_into()<CR>
+" nnoremap <silent> <F12> <Cmd>lua require'dap'.step_out()<CR>
+" nnoremap <silent> <Leader>b <Cmd>lua require'dap'.toggle_breakpoint()<CR>
 
-nnoremap <C-p> :Files<CR>
-let g:OmniSharp_server_use_mono = 1
+" nnoremap <C-p> :Files<CR>
+" let g:OmniSharp_server_use_mono = 1
 
 "let NERDTreeShowHidden=1
 call plug#begin()
@@ -68,10 +70,10 @@ Plug 'plasticboy/vim-markdown'
 " Plug 'williamboman/mason.nvim'
 " Plug 'williamboman/mason-lspconfig.nvim'
 " Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
-Plug 'mfussenegger/nvim-dap'
-Plug 'rcarriga/nvim-dap-ui'
-Plug 'theHamsta/nvim-dap-virtual-text'
-Plug 'shaunsingh/nord.nvim'
+" Plug 'mfussenegger/nvim-dap'
+" Plug 'rcarriga/nvim-dap-ui'
+" Plug 'theHamsta/nvim-dap-virtual-text'
+Plug 'ggandor/leap.nvim'
 call plug#end()
 
 " lua << EOF
