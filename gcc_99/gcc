@@ -1,0 +1,1 @@
+/usr/bin/gcc -std=c99 $@
