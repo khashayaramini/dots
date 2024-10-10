@@ -1,7 +1,7 @@
 #! /bin/bash
 
 echo "installing packages from pacman"
-sudo pacman -S neovim firefox neofetch fd htop glow netcat zsh ranger bluez-utils tor steam onionshare kleopatra keepassxc qbittorrent vlc gimp
+sudo pacman -S neovim firefox neofetch fd htop glow netcat zsh ranger bluez-utils tor steam onionshare kleopatra keepassxc qbittorrent vlc gimp ripgrep xclip
 
 echo "staring tor"
 sudo systemctl enable tor
