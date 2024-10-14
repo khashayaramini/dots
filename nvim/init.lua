@@ -446,3 +446,4 @@ vim.cmd([[set tabstop=4]])
 
 local vimrc = vim.fn.stdpath("config") .. "/vimrc.vim"
 vim.cmd.source(vimrc)
+vim.cmd([[colorscheme catppuccin]])
