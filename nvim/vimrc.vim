@@ -76,6 +76,7 @@ Plug 'plasticboy/vim-markdown'
 " Plug 'rcarriga/nvim-dap-ui'
 " Plug 'theHamsta/nvim-dap-virtual-text'
 Plug 'ggandor/leap.nvim'
+Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
 call plug#end()
 
 " lua << EOF
