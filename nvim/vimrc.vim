@@ -1,7 +1,7 @@
 set background=dark
 set clipboard=unnamedplus
 set completeopt=noinsert,menuone,noselect
-"set cursorline
+set cursorline
 set hidden
 set inccommand=split
 " set mouse=a
