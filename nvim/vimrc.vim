@@ -16,6 +16,9 @@ unmap f
 unmap t
 
 xnoremap <leader>p "_dP
+noremap <silent> <C-S>          :update<CR>
+vnoremap <silent> <C-S>         <C-C>:update<CR>
+inoremap <silent> <C-S>         <C-O>:update<CR>
 
 " space instead of tab
 " set tabstop=8
