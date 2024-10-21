@@ -245,6 +245,7 @@ alias l='ls'
 alias n='nvim'
 alias e='exit'
 alias c='clear'
+alias t='tmux'
 
 # enable auto-suggestions based on the history
 if [ -f /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh ]; then
@@ -263,3 +264,4 @@ alias 'ssh_raven_git'='ssh-add ~/.ssh/raven_git'
 
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 export PATH="$HOME/.local/bin:$PATH"
+~/.init_tmux.sh
