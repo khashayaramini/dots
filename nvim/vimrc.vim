@@ -16,9 +16,6 @@ unmap f
 unmap t
 
 xnoremap <leader>p "_dP
-noremap <silent> <C-S>          :update<CR>
-vnoremap <silent> <C-S>         <C-C>:update<CR>
-inoremap <silent> <C-S>         <C-O>:update<CR>
 
 " space instead of tab
 " set tabstop=8
@@ -89,3 +86,18 @@ call plug#end()
 "   require'lspconfig'[server].setup{}
 " end
 " EOF
+"
+" Enable using Alt + number to switch tabs
+if has("macunix")
+    let mapleader = "\<Alt>"
+else
+    let mapleader = "\<M-"
+endif
+
+" Map Alt + number to corresponding tabs
+for i in range(1, 9)
+    exec "nmap <M-" . i . "> :" . i . "tabn<CR>"
+    exec "nnoremap <M-" . i . "> :" . i . "tabn<CR>"
+endfor
+" Close current tab with Ctrl + w
+nnoremap <C-w> :tabclose<CR>
