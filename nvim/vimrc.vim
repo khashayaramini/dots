@@ -87,17 +87,11 @@ call plug#end()
 " end
 " EOF
 "
-" Enable using Alt + number to switch tabs
-if has("macunix")
-    let mapleader = "\<Alt>"
-else
-    let mapleader = "\<M-"
-endif
-
-" Map Alt + number to corresponding tabs
+" Enable using Leader + number to switch tabs
 for i in range(1, 9)
-    exec "nmap <M-" . i . "> :" . i . "tabn<CR>"
-    exec "nnoremap <M-" . i . "> :" . i . "tabn<CR>"
+    exec "nmap <Leader>" . i . " :" . i . "tabn<CR>"
+    exec "nnoremap <Leader>" . i . " :" . i . "tabn<CR>"
 endfor
+
 " Close current tab with Ctrl + w
 nnoremap <C-w> :tabclose<CR>
