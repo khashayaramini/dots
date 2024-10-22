@@ -11,6 +11,8 @@ require("packer").startup(function(use)
   -- Package manager
   use("wbthomason/packer.nvim")
 
+  use "sindrets/diffview.nvim" 
+
   use({ -- LSP Configuration & Plugins
     "neovim/nvim-lspconfig",
     requires = {
@@ -218,6 +220,11 @@ vim.keymap.set("n", "<leader>sh", require("telescope.builtin").help_tags, { desc
 vim.keymap.set("n", "<leader>sw", require("telescope.builtin").grep_string, { desc = "[S]earch current [W]ord" })
 vim.keymap.set("n", "<leader>sg", require("telescope.builtin").live_grep, { desc = "[S]earch by [G]rep" })
 vim.keymap.set("n", "<leader>sd", require("telescope.builtin").diagnostics, { desc = "[S]earch [D]iagnostics" })
+
+vim.keymap.set("n", "<leader>gc", require("telescope.builtin").git_commits, { desc = "[G]git [C]ommits" })
+vim.keymap.set("n", "<leader>gs", require("telescope.builtin").git_status, { desc = "[G]it [S]status" })
+vim.keymap.set("n", "<leader>df", "<Cmd>DiffviewOpen<CR>", { desc = "[D]i [F]fview" })
+vim.keymap.set("n", "<leader>fh", "<Cmd>DiffviewFileHistory<CR>", { desc = "[F]ile [H]istory" })
 
 -- [[ Configure Treesitter ]]
 -- See `:help nvim-treesitter`
