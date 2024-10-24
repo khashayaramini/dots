@@ -11,7 +11,9 @@ require("packer").startup(function(use)
   -- Package manager
   use("wbthomason/packer.nvim")
 
-  use "sindrets/diffview.nvim" 
+  use( "chentoast/marks.nvim")
+
+  use "sindrets/diffview.nvim"
 
   use({ -- LSP Configuration & Plugins
     "neovim/nvim-lspconfig",
@@ -171,6 +173,8 @@ require("lualine").setup({
 -- Enable Comment.nvim
 require("Comment").setup()
 
+require("marks").setup()
+
 -- Enable `lukas-reineke/indent-blankline.nvim`
 -- See `:help indent_blankline.txt`
 -- require('indent_blankline').setup {
@@ -220,6 +224,9 @@ vim.keymap.set("n", "<leader>sh", require("telescope.builtin").help_tags, { desc
 vim.keymap.set("n", "<leader>sw", require("telescope.builtin").grep_string, { desc = "[S]earch current [W]ord" })
 vim.keymap.set("n", "<leader>sg", require("telescope.builtin").live_grep, { desc = "[S]earch by [G]rep" })
 vim.keymap.set("n", "<leader>sd", require("telescope.builtin").diagnostics, { desc = "[S]earch [D]iagnostics" })
+
+vim.keymap.set("n", "<leader>jl", require("telescope.builtin").jumplist, { desc = "[J]ump [L]ist" })
+vim.keymap.set("n", "<leader>mm", require("telescope.builtin").marks, { desc = "[M]ar[m]s" })
 
 vim.keymap.set("n", "<leader>gc", require("telescope.builtin").git_commits, { desc = "[G]git [C]ommits" })
 vim.keymap.set("n", "<leader>gs", require("telescope.builtin").git_status, { desc = "[G]it [S]status" })
@@ -448,8 +455,8 @@ cmp.setup({
 })
 
 -- require("leap").add_default_mappings()
-vim.cmd([[set shiftwidth=4]])
-vim.cmd([[set tabstop=4]])
+-- vim.cmd([[set shiftwidth=4]])
+-- vim.cmd([[set tabstop=4]])
 
 local vimrc = vim.fn.stdpath("config") .. "/vimrc.vim"
 vim.cmd.source(vimrc)
