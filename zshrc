@@ -246,6 +246,7 @@ alias n='nvim'
 alias e='exit'
 alias c='clear'
 alias t='tmux'
+alias ta='tmux a'
 
 # enable auto-suggestions based on the history
 if [ -f /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh ]; then
@@ -264,4 +265,35 @@ alias 'ssh_raven_git'='ssh-add ~/.ssh/raven_git'
 
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 export PATH="$HOME/.local/bin:$PATH"
+
+
+if [ "$TERM" = "linux" ]; then
+    echo -en "\e]P0232323" #black
+    echo -en "\e]P82B2B2B" #darkgrey
+    echo -en "\e]P1D75F5F" #darkred
+    echo -en "\e]P9E33636" #red
+    echo -en "\e]P287AF5F" #darkgreen
+    echo -en "\e]PA98E34D" #green
+    echo -en "\e]P3D7AF87" #brown
+    echo -en "\e]PBFFD75F" #yellow
+    echo -en "\e]P48787AF" #darkblue
+    echo -en "\e]PC7373C9" #blue
+    echo -en "\e]P5BD53A5" #darkmagenta
+    echo -en "\e]PDD633B2" #magenta
+    echo -en "\e]P65FAFAF" #darkcyan
+    echo -en "\e]PE44C9C9" #cyan
+    echo -en "\e]P7E5E5E5" #lightgrey
+    echo -en "\e]PFFFFFFF" #white
+    clear #for background artifacting
+fi
+
+fzf-tmux(){
+    if [ ! "$TMUX" ]; then
+        tmux new -c $(find ~/* -type d | fzf)
+    else
+        tmux new-window -c $(find ~/* -type d | fzf)
+    fi
+}
+
+bindkey -s '^f' "fzf-tmux\n"
 ~/.init_tmux.sh
