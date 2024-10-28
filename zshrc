@@ -296,5 +296,11 @@ fzf-tmux(){
     fi
 }
 
-bindkey -s '^f' "fzf-tmux\n"
+fzf-cd(){
+    temp_path=$(find ~/* -type d | fzf)
+    cd $(basename $temp_path)
+}
+
+bindkey -s '^t' "fzf-tmux\n"
+bindkey -s '^f' "fzf-cd\n"
 ~/.init_tmux.sh
