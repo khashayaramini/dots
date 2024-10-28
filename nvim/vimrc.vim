@@ -11,6 +11,9 @@ set splitbelow splitright
 set title
 set ttimeoutlen=0
 set wildmenu
+set foldlevel=99
+set foldmarker={,}
+set foldmethod=marker
 
 unmap f
 unmap t
