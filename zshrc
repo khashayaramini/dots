@@ -288,10 +288,11 @@ if [ "$TERM" = "linux" ]; then
 fi
 
 fzf-tmux(){
+    temp_path=$(find ~/* -type d | fzf)
     if [ ! "$TMUX" ]; then
-        tmux new -c $(find ~/* -type d | fzf)
+        tmux new -c $temp_path -s $(basename $temp_path)
     else
-        tmux new-window -c $(find ~/* -type d | fzf)
+        tmux new-window -c $temp_path -n $(basename $temp_path)
     fi
 }
 
