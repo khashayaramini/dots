@@ -298,7 +298,7 @@ fzf-tmux(){
 
 fzf-cd(){
     temp_path=$(find ~/* -type d | fzf)
-    cd $(basename $temp_path)
+    cd $temp_path
 }
 
 bindkey -s '^t' "fzf-tmux\n"
