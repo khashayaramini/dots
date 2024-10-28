@@ -95,3 +95,15 @@ endfor
 
 " Close current tab with Ctrl + w
 nnoremap <C-w> :tabclose<CR>
+nnoremap <Left> :echo "No left for you!"<CR>
+vnoremap <Left> :<C-u>echo "No left for you!"<CR>
+inoremap <Left> <C-o>:echo "No left for you!"<CR>
+nnoremap <right> :echo "No right for you!"<CR>
+vnoremap <right> :<C-u>echo "No right for you!"<CR>
+inoremap <right> <C-o>:echo "No right for you!"<CR>
+nnoremap <up> :echo "No up for you!"<CR>
+vnoremap <up> :<C-u>echo "No up for you!"<CR>
+inoremap <up> <C-o>:echo "No up for you!"<CR>
+nnoremap <down> :echo "No down for you!"<CR>
+vnoremap <down> :<C-u>echo "No down for you!"<CR>
+inoremap <down> <C-o>:echo "No down for you!"<CR>
