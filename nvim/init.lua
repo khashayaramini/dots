@@ -220,7 +220,8 @@ vim.keymap.set("n", "<leader><space>", require("telescope.builtin").buffers, { d
 
 vim.keymap.set("n", "<leader>?", require("telescope.builtin").current_buffer_fuzzy_find, { desc = "FZF current buffer" })
 vim.keymap.set("n", "<leader>/", function() require("telescope.builtin").current_buffer_fuzzy_find({ sorter = require('telescope.sorters').get_substr_matcher({})}) end, { desc = "Search current buffer" })
-vim.keymap.set("n", "<leader>sf", require("telescope.builtin").find_files, { desc = "[S]earch [F]iles" })
+vim.keymap.set("n", "<leader>ff", require("telescope.builtin").find_files, { desc = "[S]earch [F]iles fzf" })
+vim.keymap.set("n", "<leader>sf", function() require("telescope.builtin").find_files({ sorter = require('telescope.sorters').get_substr_matcher({})}) end, { desc = "Search files" })
 vim.keymap.set("n", "<leader>sh", require("telescope.builtin").help_tags, { desc = "[S]earch [H]elp" })
 vim.keymap.set("n", "<leader>sw", require("telescope.builtin").grep_string, { desc = "[S]earch current [W]ord" })
 vim.keymap.set("n", "<leader>sg", require("telescope.builtin").live_grep, { desc = "[S]earch by [G]rep" })
