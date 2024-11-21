@@ -111,7 +111,7 @@ nnoremap <down> :echo "No down for you!"<CR>
 vnoremap <down> :<C-u>echo "No down for you!"<CR>
 " inoremap <down> <C-o>:echo "No down for you!"<CR>
 "
-nnoremap K :m .-2<CR>==
-nnoremap J :m .+1<CR>==
-vnoremap K :m '<-2<CR>gv=gv
-vnoremap J :m '>+1<CR>gv=gv
+nnoremap <S-up> :m .-2<CR>==
+nnoremap <S-down> :m .+1<CR>==
+vnoremap <S-up> :m '<-2<CR>gv=gv
+vnoremap <S-down> :m '>+1<CR>gv=gv
