@@ -303,4 +303,5 @@ fzf-cd(){
 
 bindkey -s '^t' "fzf-tmux\n"
 bindkey -s '^f' "fzf-cd\n"
+export MANPAGER='nvim +Man!'
 ~/.init_tmux.sh
