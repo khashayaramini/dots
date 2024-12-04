@@ -14,12 +14,14 @@ set wildmenu
 set foldlevel=99
 set foldmarker={,}
 set foldmethod=marker
+set hlsearch
 set path+=**
 
 unmap f
 unmap t
 
 xnoremap <leader>p "_dP
+nnoremap <C-c> :noh<CR>
 
 " space instead of tab
 " set tabstop=8
