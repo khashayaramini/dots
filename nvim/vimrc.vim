@@ -14,6 +14,7 @@ set wildmenu
 set foldlevel=99
 set foldmarker={,}
 set foldmethod=marker
+set path+=**
 
 unmap f
 unmap t
@@ -26,10 +27,10 @@ xnoremap <leader>p "_dP
 " set shiftwidth=8
 " set expandtab
 
-nnoremap <leader>n :NERDTreeFocus<CR>
-nnoremap <C-n> :NERDTree<CR>
+" nnoremap <leader>n :NERDTreeFocus<CR>
+" nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
-nnoremap <C-f> :NERDTreeFind<CR>
+" nnoremap <C-f> :NERDTreeFind<CR>
 " nnoremap <F5> :wa <bar> :set makeprg=cd\ build\ &&\ cmake\ ../.\ -DCMAKE_BUILD_TYPE=debug\ -DCMAKE_EXPORT_COMPILE_COMMANDS=1\ &&\ cmake\ --build\ . <bar> :compiler gcc <bar> :make <bar> :! cd build && ./out <CR>
 " nnoremap <silent> <F5> <Cmd>lua require'dap'.continue()<CR>
 " nnoremap <silent> <F10> <Cmd>lua require'dap'.step_over()<CR>
