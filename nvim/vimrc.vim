@@ -17,8 +17,8 @@ set foldmethod=marker
 set hlsearch
 set path+=**
 
-unmap f
-unmap t
+silent! unmap f
+silent! unmap t
 
 xnoremap <leader>p "_dP
 nnoremap <C-c> :noh<CR>
