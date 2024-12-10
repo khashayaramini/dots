@@ -467,4 +467,4 @@ cmp.setup({
 
 local vimrc = vim.fn.stdpath("config") .. "/vimrc.vim"
 vim.cmd.source(vimrc)
-vim.cmd([[colorscheme catppuccin]])
+vim.cmd([[silent! colorscheme catppuccin]])
