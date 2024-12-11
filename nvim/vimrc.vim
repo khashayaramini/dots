@@ -51,7 +51,7 @@ Plug 'ryanoasis/vim-devicons'
 
 " Utilities
 Plug 'sheerun/vim-polyglot'
-Plug 'jiangmiao/auto-pairs'
+" Plug 'jiangmiao/auto-pairs'
 Plug 'ap/vim-css-color'
 Plug 'preservim/nerdtree'
 Plug 'OmniSharp/omnisharp-vim'
@@ -118,3 +118,11 @@ nnoremap <C-up> :m .-2<CR>==
 nnoremap <C-down> :m .+1<CR>==
 vnoremap <C-up> :m '<-2<CR>gv=gv
 vnoremap <C-down> :m '>+1<CR>gv=gv
+
+" automatically close brackets, parethesis, double quotes, and single quotes
+inoremap " ""<left>
+inoremap ' ''<left>
+inoremap ( ()<left>
+inoremap [ []<left>
+inoremap { {}<left>
+inoremap /* /**/<left><left>
