@@ -224,6 +224,7 @@ vim.keymap.set("n", "<leader>ff", require("telescope.builtin").find_files, { des
 vim.keymap.set("n", "<leader>sf", function() require("telescope.builtin").find_files({ sorter = require('telescope.sorters').get_substr_matcher({})}) end, { desc = "Search files" })
 vim.keymap.set("n", "<leader>sh", require("telescope.builtin").help_tags, { desc = "[S]earch [H]elp" })
 vim.keymap.set("n", "<leader>sw", require("telescope.builtin").grep_string, { desc = "[S]earch current [W]ord" })
+vim.keymap.set("n", "<leader>sb", function() require'telescope.builtin'.grep_string({ search_dirs={"%:p"} }) end, {desc = "[S]earch current word in current [B]uffer"})
 vim.keymap.set("n", "<leader>sg", require("telescope.builtin").live_grep, { desc = "[S]earch by [G]rep" })
 vim.keymap.set("n", "<leader>sd", require("telescope.builtin").diagnostics, { desc = "[S]earch [D]iagnostics" })
 vim.keymap.set("n", "<leader>ss", require("telescope.builtin").resume, {
