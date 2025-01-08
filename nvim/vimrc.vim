@@ -114,6 +114,13 @@ nnoremap <C-w> :tabclose<CR>
 " vnoremap <down> :<C-u>echo "No down for you!"<CR>
 " inoremap <down> <C-o>:echo "No down for you!"<CR>
 "
+nnoremap <S-up> :echo "No up for you!"<CR>
+vnoremap <S-up> :<C-u>echo "No up for you!"<CR>
+inoremap <S-up> <C-o>:echo "No up for you!"<CR>
+nnoremap <S-down> :echo "No down for you!"<CR>
+vnoremap <S-down> :<C-u>echo "No down for you!"<CR>
+inoremap <S-down> <C-o>:echo "No down for you!"<CR>
+
 nnoremap <C-up> :m .-2<CR>==
 nnoremap <C-down> :m .+1<CR>==
 vnoremap <C-up> :m '<-2<CR>gv=gv
