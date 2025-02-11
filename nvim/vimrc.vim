@@ -83,6 +83,93 @@ Plug 'plasticboy/vim-markdown'
 " Plug 'theHamsta/nvim-dap-virtual-text'
 Plug 'ggandor/leap.nvim'
 Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
+
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+Plug 'williamboman/mason.nvim'
+
+Plug 'junegunn/vim-plug'
+
+
+
+
+Plug 'chentoast/marks.nvim'
+
+
+
+" Diff View
+
+Plug 'sindrets/diffview.nvim'
+
+
+
+" LSP Configuration & Plugins
+
+Plug 'neovim/nvim-lspconfig'
+
+Plug 'williamboman/mason.nvim'
+
+Plug 'williamboman/mason-lspconfig.nvim'
+
+Plug 'j-hui/fidget.nvim'
+
+Plug 'folke/neodev.nvim'
+
+
+
+" Autocompletion
+
+Plug 'hrsh7th/nvim-cmp'
+
+Plug 'hrsh7th/cmp-nvim-lsp'
+
+Plug 'L3MON4D3/LuaSnip'
+
+Plug 'saadparwaiz1/cmp_luasnip'
+
+
+
+" Treesitter
+
+Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdate' }
+
+Plug 'nvim-treesitter/nvim-treesitter-textobjects'
+
+
+
+" Git Plugins
+
+Plug 'tpope/vim-fugitive'
+
+Plug 'tpope/vim-rhubarb'
+
+Plug 'lewis6991/gitsigns.nvim'
+
+
+
+" UI Enhancements
+
+Plug 'navarasu/onedark.nvim'
+
+Plug 'nvim-lualine/lualine.nvim'
+
+Plug 'numToStr/Comment.nvim'
+
+
+
+" Fuzzy Finder
+
+Plug 'nvim-telescope/telescope.nvim'
+
+Plug 'nvim-lua/plenary.nvim'
+
+Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
+
+
+
+" Additional plugins
+
+Plug 'folke/flash.nvim'
 call plug#end()
 
 " lua << EOF
@@ -127,9 +214,8 @@ vnoremap <C-up> :m '<-2<CR>gv=gv
 vnoremap <C-down> :m '>+1<CR>gv=gv
 
 " automatically close brackets, parethesis, double quotes, and single quotes
-inoremap " ""<left>
-inoremap ' ''<left>
-inoremap ( ()<left>
-inoremap [ []<left>
-inoremap { {}<left>
-inoremap /* /**/<left><left>
+" inoremap " ""<left>
+" inoremap ' ''<left>
+" inoremap ( ()<left>
+" inoremap [ []<left>
+" inoremap { {}<left>
